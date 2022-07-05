@@ -1,0 +1,195 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --honeydew: #ebf5dfff;
+  --celadon: #bad4aaff;
+  --pale-spring-bud: #d4d4aaff;
+  --sunray: #edb458ff;
+  --fulvous: #e8871eff;
+  --blue-munsell: #068d9dff;
+  --liberty: #53599aff;
+  --cerulean-frost: #6d9dc5ff;
+  --rosy-brown: #b88e8dff;
+  --maximum-blue-purple: rgb(96, 72, 156);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--honeydew);
+  color: black;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/** ============ Floor Plan ============ */
+
+.floor-plan {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+.floor-plan > * {
+  flex-shrink: 0;
+}
+
+.room-text {
+  color: whitesmoke;
+}
+
+/** ============ Top ============ */
+
+.top {
+  display: flex;
+  height: 20%;
+  width: 100%;
+}
+
+.kitchen-room {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+
+.kitchen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  background-color: var(--sunray);
+}
+
+.oven-sink-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+}
+
+.oven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 50%;
+  width: 100%;
+  background-color: var(--blue-munsell);
+}
+
+.sink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: var(--liberty);
+}
+
+/** ============ Middle ============ */
+
+.middle {
+  position: relative;
+  display: flex;
+  height: 40%;
+  width: 100%;
+}
+
+.living-room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--cerulean-frost);
+}
+
+/** ============ Bottom ============ */
+
+.bottom {
+  position: relative;
+  display: flex;
+  height: 40%;
+  width: 100%;
+}
+
+/** ============ Bedroom ============ */
+
+.bedroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bed-1 {
+  height: 100px;
+  width: 40%;
+  background-color: var(--celadon);
+}
+
+#bed-2 {
+  height: 100%;
+  width: 40%;
+  background-color: var(--fulvous);
+}
+
+#bed-3 {
+  height: 100%;
+  width: 60%;
+  background-color: var(--maximum-blue-purple);
+}
+
+
+
+/** ============ Bath ============ */
+
+.bath {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bath-Half {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--rosy-brown);
+  width: 20%;
+  height: 50%;
+}
+
+#bath-Full {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--rosy-brown);
+  height: 70%;
+  width: 20%;
+}
