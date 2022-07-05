@@ -1,3 +1,5 @@
+import Closet from "./Closet"
+
 function Bedroom (props) {
   return (
     <>
